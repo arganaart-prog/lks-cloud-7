@@ -1,0 +1,270 @@
+/* ===============================
+   RESET & BASE
+=============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===============================
+   HEADER & NAV
+=============================== */
+header {
+  background: linear-gradient(135deg, #2c3e50, #4a6491);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: .5rem;
+}
+
+header p {
+  max-width: 800px;
+  margin: 0 auto 1.2rem;
+  opacity: .9;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+  
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: .4rem 1rem;
+  border: 1px solid rgba(255,255,255,.3);
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,.15);
+}
+
+/* ===============================
+   SECTION
+=============================== */
+section {
+  background: #fff;
+  max-width: 1200px;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #eee;
+  padding-bottom: .4rem;
+}
+
+/* ===============================
+   COUNTRY EXPLORER
+=============================== */
+#searchCountry {
+  width: 100%;
+  padding: .7rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#countryList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.country-item {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.country-item img {
+  width: 40px;
+  margin-bottom: .5rem;
+}
+
+.country-item strong {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.country-item button {
+  padding: .4rem .8rem;
+  border: none;
+  background: #4a6491;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.country-item button:hover {
+  background: #3a5379;
+}
+
+/* ===============================
+   NOTES FORM
+=============================== */
+form {
+  background: #f9f9f9;
+  padding: 1.2rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: .8rem;
+  font-weight: 600;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: .6rem;
+  margin-top: .3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  margin-top: .8rem;
+  padding: .6rem 1.2rem;
+  background: #4a6491;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #3a5379;
+}
+
+/* ===============================
+   NOTES TABLE
+=============================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #4a6491;
+  color: #fff;
+}
+
+th, td {
+  padding: .7rem;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background: #f1f3f6;
+}
+
+td button {
+  padding: .3rem .6rem;
+  margin-right: .3rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+td button:first-child {
+  background: #17a2b8;
+  color: #fff;
+}
+
+td button:last-child {
+  background: #dc3545;
+  color: #fff;
+}
+
+/* ===============================
+   FOOTER / ABOUT
+=============================== */
+footer {
+  text-align: center;
+  margin: 3rem 0 1.5rem;
+  color: #777;
+  font-size: .9rem;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+/* ===============================
+   ABOUT PAGE
+=============================== */
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.about-content h2 {
+  margin-bottom: 1rem;
+}
+
+.about-content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  color: #2c3e50;
+}
+
+.about-content p {
+  margin-bottom: 0.8rem;
+}
+
+.about-content ul {
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.about-content li {
+  margin-bottom: 0.4rem;
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: .8rem;
+  }
+
+  section {
+    margin: 1rem;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}

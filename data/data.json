@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "country": "Indonesia",
+    "note": "Negara asal",
+    "priority": "High"
+  }
+,
+  {
+    "id": 2,
+    "country": "Malaysia",
+    "note": "negara tetangga",
+    "priority": "normal"
+  }
+]
